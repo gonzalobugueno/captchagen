@@ -1,0 +1,6 @@
+{
+    "require": {
+        "gregwar/captcha": "^1.2",
+        "ulrichsg/getopt-php": "^4.0"
+    }
+}
