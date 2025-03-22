@@ -51,3 +51,13 @@ Creates 5 images in the current working directory and will have a `_1` suffix.
 The dimensions of the images are all 150x40.
 The first `6` characters of the filename are the labels of each respective CAPTCHA.
 Distortions and other kinds of randomness are frozen - these five should share the same distortions.
+### Deploy on Collab
+
+```
+!apt-get install php php-gd composer
+!git clone https://github.com/gonzalobugueno/captchagen
+!composer install -d captchagen/
+!mkdir testdata
+!php captchagen/gen.php -w 300 -h 80 --phrasecount 3 --exhaust --alphabet "0123456789" ./testdata _1
+```
+Sets up the script and makes captchas as described by the first example 
